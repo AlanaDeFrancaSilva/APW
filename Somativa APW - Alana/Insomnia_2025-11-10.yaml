@@ -1,0 +1,271 @@
+type: collection.insomnia.rest/5.0
+name: Somativa APW - 4º Termo
+meta:
+  id: wrk_d26536dad111498e8a2a701ab23555a1
+  created: 1762820535339
+  modified: 1762820535339
+collection:
+  - url: http://127.0.0.1:8000/api/produtos/
+    name: PRODUTOS
+    meta:
+      id: req_1d0d09613f8c47fc8b8bf0922e4b03f3
+      created: 1762820554091
+      modified: 1762822036468
+      isPrivate: false
+      sortKey: -1762820554091
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://127.0.0.1:8000/api/produtos/
+    name: PRODUTOS
+    meta:
+      id: req_cb0ea5ed186d42a09781f9f294f44209
+      created: 1762822008833
+      modified: 1762822266302
+      isPrivate: false
+      sortKey: -1762822008833
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "name": "Notebook ",
+          "codeRegistro": "NB123",
+          "codeBarras": "7891234567890",
+          "categoria_FK": 1,  
+          "marca_FK": 1,
+          "custo": "5000.00",
+          "valorVenda": "7500.00",
+          "promocao": false
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://127.0.0.1:8000/api/categoria/
+    name: CATEGORIA
+    meta:
+      id: req_92479443445b4fcaa0fe05748d2b1571
+      created: 1762822093374
+      modified: 1762822169532
+      isPrivate: false
+      sortKey: -1762822093374
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://127.0.0.1:8000/api/categoria/
+    name: CATEGORIA
+    meta:
+      id: req_ee78302e36b249998199677cb15f42ea
+      created: 1762822155294
+      modified: 1762822181066
+      isPrivate: false
+      sortKey: -1762822155294
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "name": "Informática"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://127.0.0.1:8000/api/marca/
+    name: MARCA
+    meta:
+      id: req_fcf8669ea6d64c03b95783c6ecea6e11
+      created: 1762822200256
+      modified: 1762822235013
+      isPrivate: false
+      sortKey: -1762822200256
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://127.0.0.1:8000/api/marca/
+    name: MARCA
+    meta:
+      id: req_615ba41abd754a388ebfb8f4053c9753
+      created: 1762822209679
+      modified: 1762822239284
+      isPrivate: false
+      sortKey: -1762822209679
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "name": "Dell",
+          "cnpj": "12345678000199"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://127.0.0.1:8000/api/escaninhos/
+    name: ESCANINHOS
+    meta:
+      id: req_cc861b12a18f4ef79aa24e57366f78d0
+      created: 1762822929906
+      modified: 1762822974859
+      isPrivate: false
+      sortKey: -1762822929906
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://127.0.0.1:8000/api/escaninhos/
+    name: ESCANINHOS
+    meta:
+      id: req_367289433ab34abebd1beb2b9ea6ea8b
+      created: 1762822975875
+      modified: 1762823072235
+      isPrivate: false
+      sortKey: -1762822975875
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+            "cod": "ESC001",
+            "setor_FK": 1,
+            "produto_FK": 1, 
+            "quantidade": "100"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://127.0.0.1:8000/api/setor/
+    name: SETOR
+    meta:
+      id: req_f26e993a8664409fb215c6b14e6500e5
+      created: 1762823079520
+      modified: 1762823110934
+      isPrivate: false
+      sortKey: -1762823079520
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://127.0.0.1:8000/api/setor/
+    name: SETOR
+    meta:
+      id: req_acdf4b05a14443bc9be1988dca427628
+      created: 1762823114572
+      modified: 1762823237200
+      isPrivate: false
+      sortKey: -1762823114572
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+            "name": "Setor A"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_c6fdb5b88ac10f8da562f5411d1bcd9c92142d31
+    created: 1762820535346
+    modified: 1762820535346
+environments:
+  name: Base Environment
+  meta:
+    id: env_c6fdb5b88ac10f8da562f5411d1bcd9c92142d31
+    created: 1762820535343
+    modified: 1762820535343
+    isPrivate: false
